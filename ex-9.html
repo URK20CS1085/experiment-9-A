@@ -12,17 +12,15 @@ Name<span style="color: red;">*</span>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;
-<input type='text' name="myName" ng-model="name" .required pattern="[a-z,A-Z]{1,}">
+<input type='text' name="myName" ng-model="name" .required >
 <span style="color: red;" ng-show="myform.myName.$error.required">Name is required</span>
-<span style="color: red;" ng-show="myform.myName.$error.pattern">Name is invalid</span>
 <br>
 <br>
 Password<span style="color: red;">*</span>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type='password' name="mypassword" ng- model="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+<input type='pass' name="mypassword" ng- model="pass" >
 <span style="color: red;" ng-show="myform.mypassword.$error.required">Password is required</span>
-<span style="color: red;" ng-show="myform.mypassword.$error.pattern">Password is invalid</span>
 <br>
 <br>
 Age<span style="color: red;">*</span>
